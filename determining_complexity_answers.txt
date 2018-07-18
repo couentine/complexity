@@ -6,6 +6,8 @@
 
   3)  O(n). Like the example in #2, it will only run through the collection once. Even though it's a 2D array, that doesn't change how many times it will run.
 
+For instance, a collection that is a 4x4 2D array has a size (n) of 16. When that array is passed to find_largest, the outside loop, `collection.length.times`, will execute four times. Within those four executions, the `subcollection.length.times` loop will execute a total of 16 times, which is equal to n in this case.
+
   4)  Exponential is the closest.
 
   5)  O(n). The temp, num1, num2 items have nothing to do wth how many operations are run. It's all about n and i.
